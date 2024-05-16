@@ -43,9 +43,6 @@ schema:
           title: "Port"
           type: number
           default: 80
-        command:
-          title: "Command"
-          type: string
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
