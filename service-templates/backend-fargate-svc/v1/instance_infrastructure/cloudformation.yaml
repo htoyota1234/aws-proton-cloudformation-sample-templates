@@ -43,7 +43,6 @@ Resources:
     Properties:
       ContainerDefinitions:
         - Essential: true
-          Command: ["{{service_instance.inputs.command}}"]
           Image: '{{service_instance.inputs.image}}'
           LogConfiguration:
             LogDriver: awslogs
@@ -54,7 +53,7 @@ Resources:
           Name: '{{service_instance.name}}'
           PortMappings:
             - ContainerPort: 80
-              Protocol: tcp
+              Protocol: '{{service_instance.protocol}}'
           Environment:
             - Name: SNS_TOPIC_ARN
               Value: '{"ping":"{{environment.outputs.SNSTopicArn}}"}'
