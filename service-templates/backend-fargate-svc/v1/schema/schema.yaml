@@ -11,13 +11,15 @@ schema:
       properties:
         commands:
           title: "Command"
-          type: array
-          items:
-            type: string
-            properties:
-                - nginx
-                - '-g'
-                - daemon off
+          type: object
+          default:
+            type: array
+            items:
+              type: string
+            default:
+              - nginx
+              - '-g'
+              - daemon off
         port:
           title: "Port"
           type: number
