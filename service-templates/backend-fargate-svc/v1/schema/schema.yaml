@@ -46,6 +46,8 @@ schema:
         command:
           title: "Command"
           type: array
+          items:
+            type: string
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
