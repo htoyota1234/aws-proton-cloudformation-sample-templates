@@ -53,7 +53,7 @@ Resources:
           Name: '{{service_instance.name}}'
           PortMappings:
             - ContainerPort: 80
-              Protocol: '{{service_instance.protocol}}'
+              Protocol: '{{service_instance.inputs.protocol}}'
           Environment:
             - Name: SNS_TOPIC_ARN
               Value: '{"ping":"{{environment.outputs.SNSTopicArn}}"}'
