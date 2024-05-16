@@ -44,7 +44,7 @@ Resources:
       ContainerDefinitions:
         - Essential: true
           Image: '{{service_instance.inputs.image}}'
-          Command: ["{{service_instance.inputs.command}}"]
+          Command: "{{service_instance.inputs.command}}"
           LogConfiguration:
             LogDriver: awslogs
             Options:
