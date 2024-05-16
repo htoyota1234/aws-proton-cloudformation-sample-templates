@@ -9,6 +9,15 @@ schema:
       type: object
       description: "Input properties for a Backend Fargate service"
       properties:
+        commands:
+          title: "Command"
+          type: array
+          items:
+            type: string
+            properties:
+                - nginx
+                - '-g'
+                - daemon off
         port:
           title: "Port"
           type: number
