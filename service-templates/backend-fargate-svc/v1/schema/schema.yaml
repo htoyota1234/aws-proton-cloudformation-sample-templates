@@ -13,7 +13,7 @@ schema:
           title: "Port"
           type: number
           description: "The port to route traffic to"
-          default: 8080
+          default: 80
           minimum: 0
           maximum: 65535
         desired_count:
