@@ -46,11 +46,11 @@ schema:
         command:
           title: "Command"
           type: array
+          default:
+            - "echo"
+            - "test"
           items:
             type: string
-            default:
-             - "echo"
-             - "test"
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
