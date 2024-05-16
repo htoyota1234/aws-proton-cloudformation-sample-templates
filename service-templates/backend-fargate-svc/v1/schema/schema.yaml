@@ -13,14 +13,18 @@ schema:
           title: "Command"
           type: object
           properties:
+        commands:
+          title: "Command"
+          type: object
+          properties:
             default:
                 type: array
                 items:
-                type: string
+                    type: string
                 default:
-                - nginx
-                - '-g'
-                - daemon off
+                    - nginx
+                    - '-g'
+                    - daemon off
         port:
           title: "Port"
           type: number
