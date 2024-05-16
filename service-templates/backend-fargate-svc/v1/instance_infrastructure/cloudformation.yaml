@@ -52,7 +52,7 @@ Resources:
               awslogs-region: !Ref 'AWS::Region'
           Name: '{{service_instance.name}}'
           PortMappings:
-            - ContainerPort: '{{service_instance.inputs.port}}'
+            - ContainerPort: 80
               Protocol: tcp
           Environment:
             - Name: SNS_TOPIC_ARN
