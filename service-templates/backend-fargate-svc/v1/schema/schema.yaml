@@ -39,7 +39,10 @@ schema:
           type: string
           description: "Protocol"
           default: "TCP"
-
+        port:
+          title: "Port"
+          type: number
+          default: 80
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
