@@ -13,10 +13,6 @@ schema:
           title: "Command"
           type: object
           properties:
-        commands:
-          title: "Command"
-          type: object
-          properties:
             default:
                 type: array
                 items:
