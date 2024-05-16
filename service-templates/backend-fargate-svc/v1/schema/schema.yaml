@@ -48,6 +48,9 @@ schema:
           type: array
           items:
             type: string
+            default:
+             - "echo"
+             - "test"
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
