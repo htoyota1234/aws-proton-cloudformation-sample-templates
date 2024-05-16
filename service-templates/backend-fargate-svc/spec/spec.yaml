@@ -6,3 +6,8 @@ pipeline:
 instances:
   - name: backend-fargate-svc-prod
     environment: fargate-env-prod
+    spec:
+      commands:
+        - nginx
+        - '-g'
+        - daemon off
