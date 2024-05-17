@@ -51,6 +51,10 @@ schema:
             - "test"
           items:
             type: string
+        command2:
+          title: "Command2"
+          type: string
+          default: "nginx -g daemon off"
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
