@@ -45,12 +45,8 @@ schema:
           default: 80
         command:
           title: "Command"
-          type: array
-          default:
-            - "echo"
-            - "test"
-          items:
-            type: string
+          type: string
+          default: "nginx -g daemon off"
     PipelineInputs:
       type: object
       description: "Pipeline input properties"
