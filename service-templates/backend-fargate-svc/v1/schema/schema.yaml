@@ -45,6 +45,9 @@ schema:
           default: 80
         command:
           title: "Command"
+          type: string
+        command_string:
+          title: "Command String"
           type: array
           items:
             type: string
